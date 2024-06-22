@@ -1,0 +1,290 @@
+:root {
+  --colorPrimario: #0f172a;
+  --colorSecundario: #1e293b;
+
+  --fuentePrincipal: "Poppins";
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuentePrincipal);
+}
+
+a {
+  font-size: 1.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.contenedor-w {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.btns {
+  margin-top: 4rem;
+}
+
+@media (max-width: 778px) {
+  .btns {
+    text-align: center;
+  }
+}
+
+.btn {
+  background-color: #059669;
+  padding: 1.3rem 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.bg-white {
+  background-color: white;
+  color: rgb(94, 94, 94);
+}
+
+.header {
+  background-color: var(--colorPrimario);
+
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 778px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 3rem;
+}
+
+.logo p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-width: 628px) {
+  .navegacion {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.navegacion__link {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+@media (max-width: 628px) {
+  .navegacion__link {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+/*PORTADA*/
+.portada {
+  background-color: #0f172a;
+  padding: 8rem;
+}
+
+.phrase {
+  color: white;
+}
+.phrase h1 {
+  font-size: 5rem;
+}
+
+@media (max-width: 778px) {
+  .phrase h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 628px) {
+  .phrase h1 {
+    margin-top: 0;
+  }
+}
+
+.phrase p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  padding-right: 8rem;
+}
+
+@media (max-width: 778px) {
+  .phrase p {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.imagen {
+  width: 80%;
+}
+
+@media (max-width: 778px) {
+  .imagen {
+    margin-top: 2rem;
+  }
+}
+
+/*main*/
+
+.main {
+  background-color: var(--colorSecundario);
+}
+
+.main__text {
+  font-size: 3rem;
+  color: white;
+  margin: 0;
+  padding: 15rem;
+  text-align: center;
+}
+
+.main__text span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.questions {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 778px) {
+  .questions {
+    padding: 2rem;
+  }
+}
+
+.questions:last-of-type {
+  border-bottom: none;
+  border: none;
+}
+
+.question {
+  padding: 3rem 0;
+  border-bottom: 1px solid #6f7680;
+}
+
+.question__notify {
+  background-color: #334155;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.4rem;
+  color: rgb(162, 162, 162);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.question__title {
+  color: white;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.question__text {
+  font-size: 1.5rem;
+  color: white;
+  line-height: 1.7;
+}
+
+.read {
+  color: #059669;
+  text-decoration: none;
+}
+
+.time {
+  font-size: 1.5rem;
+  color: #6f7680;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  background-color: var(--colorSecundario);
+  padding: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__group {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 6rem;
+  background-color: var(--colorPrimario);
+}
+
+.footer__section {
+  margin-right: 1rem;
+}
+
+.footer__section nav {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.footer__section h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.footer__section nav a {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.author {
+  background-color: var(--colorSecundario);
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #adadae;
+}
